@@ -1,0 +1,584 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC RSC14 RSC14E SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip FT62F08X ]
+[d frameptr 6 ]
+"62 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\IDE3.0.9\data\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\IDE3.0.9\data\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"15 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\IDE3.0.9\data\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\IDE3.0.9\data\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"30 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\Cc_2033Anmo.C
+[v _main main `(i  1 e 2 0 ]
+"30 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\CC_APP.c
+[v _app app `(v  1 e 1 0 ]
+"75
+[v _appbt appbt `(v  1 e 1 0 ]
+"126
+[v _app10 app10 `(v  1 e 1 0 ]
+"189
+[v _app11 app11 `(v  1 e 1 0 ]
+"366
+[v _app40 app40 `(v  1 e 1 0 ]
+"403
+[v _app30 app30 `(v  1 e 1 0 ]
+"40 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\CC_FUN.C
+[v _GET_ADC_DATA GET_ADC_DATA `(ui  1 e 2 0 ]
+"56
+[v _DelayUs DelayUs `(v  1 e 1 0 ]
+"16 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\CC_INT.C
+[v _POWER_INITIAL POWER_INITIAL `(v  1 e 1 0 ]
+"391
+[v _Time2Initial Time2Initial `(v  1 e 1 0 ]
+"626
+[v _ADC_INITIAL ADC_INITIAL `(v  1 e 1 0 ]
+"767
+[v _TIMER0_INITIAL TIMER0_INITIAL `(v  1 e 1 0 ]
+"778
+[v _Time4Initial Time4Initial `(v  1 e 1 0 ]
+"851
+[v _ISR ISR `II(v  1 e 1 0 ]
+"29 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\CC_KEY.C
+[v _key key `(v  1 e 1 0 ]
+"44
+[v _readkey readkey `(v  1 e 1 0 ]
+"82
+[v _readmode readmode `(v  1 e 1 0 ]
+"99 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\IDE3.0.9\data\include\FT62F08X.h
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"125
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"127
+[v _RA0 RA0 `VEb  1 e 0 @96 ]
+"128
+[v _RA1 RA1 `VEb  1 e 0 @97 ]
+"136
+[v _PA0 PA0 `VEb  1 e 0 @96 ]
+"137
+[v _PA1 PA1 `VEb  1 e 0 @97 ]
+"141
+[v _PA5 PA5 `VEb  1 e 0 @101 ]
+"142
+[v _PA6 PA6 `VEb  1 e 0 @102 ]
+"143
+[v _PA7 PA7 `VEb  1 e 0 @103 ]
+"176
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"189
+[v _PB2 PB2 `VEb  1 e 0 @106 ]
+"190
+[v _PB3 PB3 `VEb  1 e 0 @107 ]
+"191
+[v _PB4 PB4 `VEb  1 e 0 @108 ]
+"192
+[v _PB5 PB5 `VEb  1 e 0 @109 ]
+"227
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"229
+[v _RC0 RC0 `VEb  1 e 0 @112 ]
+"238
+[v _PC0 PC0 `VEb  1 e 0 @112 ]
+"241
+[v _PC3 PC3 `VEb  1 e 0 @115 ]
+"242
+[v _PC4 PC4 `VEb  1 e 0 @116 ]
+"243
+[v _PC5 PC5 `VEb  1 e 0 @117 ]
+"244
+[v _PC6 PC6 `VEb  1 e 0 @118 ]
+"245
+[v _PC7 PC7 `VEb  1 e 0 @119 ]
+"278
+[v _PORTD PORTD `VEuc  1 e 1 @15 ]
+"486
+[v _ADDLY ADDLY `VEuc  1 e 1 @31 ]
+"495
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"504
+[v _TRISA7 TRISA7 `VEb  1 e 0 @1127 ]
+"525
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"555
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"584
+[v _TRISD TRISD `VEuc  1 e 1 @143 ]
+"632
+[v _CKOCON CKOCON `VEuc  1 e 1 @149 ]
+"752
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"783
+[v _PCKEN PCKEN `VEuc  1 e 1 @154 ]
+"811
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"816
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"821
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+"823
+[v _ADON ADON `VEb  1 e 0 @1256 ]
+"824
+[v _GO GO `VEb  1 e 0 @1257 ]
+"827
+[v _ADCAL ADCAL `VEb  1 e 0 @1259 ]
+"857
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"889
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
+"935
+[v _LATA7 LATA7 `VEb  1 e 0 @2151 ]
+"958
+[v _LATB1 LATB1 `VEb  1 e 0 @2153 ]
+"1016
+[v _LATD1 LATD1 `VEb  1 e 0 @2169 ]
+"1017
+[v _LATD2 LATD2 `VEb  1 e 0 @2170 ]
+"1018
+[v _LATD3 LATD3 `VEb  1 e 0 @2171 ]
+"1019
+[v _LATD4 LATD4 `VEb  1 e 0 @2172 ]
+"1020
+[v _LATD5 LATD5 `VEb  1 e 0 @2173 ]
+"1038
+[v _TIM4CR1 TIM4CR1 `VEuc  1 e 1 @273 ]
+"1063
+[v _TIM4IER TIM4IER `VEuc  1 e 1 @274 ]
+"1065
+[v _T4UIE T4UIE `VEb  1 e 0 @2192 ]
+"1075
+[v _TIM4SR TIM4SR `VEuc  1 e 1 @275 ]
+"1077
+[v _T4UIF T4UIF `VEb  1 e 0 @2200 ]
+"1088
+[v _TIM4EGR TIM4EGR `VEuc  1 e 1 @276 ]
+"1101
+[v _TIM4CNTR TIM4CNTR `VEuc  1 e 1 @277 ]
+"1106
+[v _TIM4PSCR TIM4PSCR `VEuc  1 e 1 @278 ]
+"1126
+[v _TIM4ARR TIM4ARR `VEuc  1 e 1 @279 ]
+"1141
+[v _PSRC0 PSRC0 `VEuc  1 e 1 @282 ]
+"1146
+[v _PSRC1 PSRC1 `VEuc  1 e 1 @283 ]
+"1196
+[v _WPUA WPUA `VEuc  1 e 1 @396 ]
+"1225
+[v _WPUB WPUB `VEuc  1 e 1 @397 ]
+"1254
+[v _WPUC WPUC `VEuc  1 e 1 @398 ]
+"1283
+[v _WPUD WPUD `VEuc  1 e 1 @399 ]
+"1399
+[v _ANSELA ANSELA `VEuc  1 e 1 @407 ]
+"1443
+[v _PSINK0 PSINK0 `VEuc  1 e 1 @410 ]
+"1447
+[v _PSINK1 PSINK1 `VEuc  1 e 1 @411 ]
+"1450
+[v _PSINK2 PSINK2 `VEuc  1 e 1 @412 ]
+"1455
+[v _PSINK3 PSINK3 `VEuc  1 e 1 @413 ]
+"1501
+[v _WPDA WPDA `VEuc  1 e 1 @524 ]
+"1531
+[v _WPDB WPDB `VEuc  1 e 1 @525 ]
+"1560
+[v _WPDC WPDC `VEuc  1 e 1 @526 ]
+"1590
+[v _WPDD WPDD `VEuc  1 e 1 @527 ]
+"1618
+[v _T1CEN T1CEN `VEb  1 e 0 @4232 ]
+"1971
+[v _TIM1CCER1 TIM1CCER1 `VEuc  1 e 1 @541 ]
+"2177
+[v _TIM2CCR3H TIM2CCR3H `VEuc  1 e 1 @670 ]
+"2181
+[v _TIM2CCR3L TIM2CCR3L `VEuc  1 e 1 @671 ]
+"2188
+[v _TIM2CR1 TIM2CR1 `VEuc  1 e 1 @780 ]
+"2190
+[v _T2CEN T2CEN `VEb  1 e 0 @6240 ]
+"2211
+[v _TIM2IER TIM2IER `VEuc  1 e 1 @781 ]
+"2230
+[v _TIM2SR1 TIM2SR1 `VEuc  1 e 1 @782 ]
+"2249
+[v _TIM2SR2 TIM2SR2 `VEuc  1 e 1 @783 ]
+"2267
+[v _TIM2EGR TIM2EGR `VEuc  1 e 1 @784 ]
+"2287
+[v _TIM2CCMR1 TIM2CCMR1 `VEuc  1 e 1 @785 ]
+"2339
+[v _TIM2CCMR2 TIM2CCMR2 `VEuc  1 e 1 @786 ]
+"2390
+[v _TIM2CCMR3 TIM2CCMR3 `VEuc  1 e 1 @787 ]
+"2441
+[v _TIM2CCER1 TIM2CCER1 `VEuc  1 e 1 @788 ]
+"2460
+[v _TIM2CCER2 TIM2CCER2 `VEuc  1 e 1 @789 ]
+"2474
+[v _TIM2CNTRH TIM2CNTRH `VEuc  1 e 1 @790 ]
+"2478
+[v _TIM2CNTRL TIM2CNTRL `VEuc  1 e 1 @791 ]
+"2503
+[v _TIM2ARRH TIM2ARRH `VEuc  1 e 1 @793 ]
+"2507
+[v _TIM2ARRL TIM2ARRL `VEuc  1 e 1 @794 ]
+"2511
+[v _TIM2CCR1H TIM2CCR1H `VEuc  1 e 1 @795 ]
+"2515
+[v _TIM2CCR1L TIM2CCR1L `VEuc  1 e 1 @796 ]
+"2519
+[v _TIM2CCR2H TIM2CCR2H `VEuc  1 e 1 @797 ]
+"2523
+[v _TIM2CCR2L TIM2CCR2L `VEuc  1 e 1 @798 ]
+"2527
+[v _TCKSRC TCKSRC `VEuc  1 e 1 @799 ]
+"3283
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @1050 ]
+"3310
+[v _ADCMPH ADCMPH `VEuc  1 e 1 @1051 ]
+"3928
+[v _ad3nop ad3nop `DCuc  1 e 1 @3 ]
+"52 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\CCC_data.h
+[v _f_1ms f_1ms `VEb  1 e 0 0 ]
+"53
+[v _f_10ms f_10ms `VEb  1 e 0 0 ]
+"54
+[v _f_1s f_1s `VEb  1 e 0 0 ]
+"55
+[v _f_1ma f_1ma `VEb  1 e 0 0 ]
+"56
+[v _f_2ma f_2ma `VEb  1 e 0 0 ]
+"57
+[v _f_3ma f_3ma `VEb  1 e 0 0 ]
+"58
+[v _f_4ma f_4ma `VEb  1 e 0 0 ]
+"59
+[v _f_led1 f_led1 `VEb  1 e 0 0 ]
+"60
+[v _f_led2 f_led2 `VEb  1 e 0 0 ]
+"61
+[v _f_led3 f_led3 `VEb  1 e 0 0 ]
+"62
+[v _f_led4 f_led4 `VEb  1 e 0 0 ]
+"63
+[v _f_sleep f_sleep `VEb  1 e 0 0 ]
+"64
+[v _f_ledoff f_ledoff `VEb  1 e 0 0 ]
+"65
+[v _f_conduction f_conduction `VEb  1 e 0 0 ]
+"66
+[v _f_ledlevel f_ledlevel `VEb  1 e 0 0 ]
+"67
+[v _f_key1 f_key1 `VEb  1 e 0 0 ]
+"68
+[v _f_key2 f_key2 `VEb  1 e 0 0 ]
+"69
+[v _f_io f_io `VEb  1 e 0 0 ]
+"70
+[v _f_dc f_dc `VEb  1 e 0 0 ]
+"71
+[v _fb_dc fb_dc `VEb  1 e 0 0 ]
+"72
+[v _fb_ntc fb_ntc `VEb  1 e 0 0 ]
+"73
+[v _f_ntc f_ntc `VEb  1 e 0 0 ]
+"74
+[v _f_cds f_cds `VEb  1 e 0 0 ]
+"75
+[v _f_kfin f_kfin `VEb  1 e 0 0 ]
+"76
+[v _fb_kfin fb_kfin `VEb  1 e 0 0 ]
+"77
+[v _fl_kfin fl_kfin `VEb  1 e 0 0 ]
+"78
+[v _f_nop f_nop `VEb  1 e 0 0 ]
+"79
+[v _f_delay2s f_delay2s `VEb  1 e 0 0 ]
+"80
+[v _f_delay3m f_delay3m `VEb  1 e 0 0 ]
+"81
+[v _f_np3m f_np3m `VEb  1 e 0 0 ]
+"82
+[v _f_xd f_xd `VEb  1 e 0 0 ]
+"83
+[v _f_wled f_wled `VEb  1 e 0 0 ]
+"84
+[v _f_dcfast f_dcfast `VEb  1 e 0 0 ]
+"85
+[v _f_rled f_rled `VEb  1 e 0 0 ]
+"86
+[v _f_on f_on `VEb  1 e 0 0 ]
+"87
+[v _f_key1s f_key1s `VEb  1 e 0 0 ]
+"88
+[v _f_key1and2 f_key1and2 `VEb  1 e 0 0 ]
+"89
+[v _f_key1l f_key1l `VEb  1 e 0 0 ]
+"90
+[v _f_readeep f_readeep `VEb  1 e 0 0 ]
+"91
+[v _f_test f_test `VEb  1 e 0 0 ]
+"92
+[v _sleep_ok_f sleep_ok_f `VEb  1 e 0 0 ]
+"93
+[v _f_push f_push `VEb  1 e 0 0 ]
+"94
+[v _f_buz f_buz `VEb  1 e 0 0 ]
+"95
+[v _f_one f_one `VEb  1 e 0 0 ]
+"96
+[v _f_pwm f_pwm `VEb  1 e 0 0 ]
+"97
+[v _f_hh f_hh `VEb  1 e 0 0 ]
+"98
+[v _f_off f_off `VEb  1 e 0 0 ]
+"99
+[v _adcData adcData `VEui  1 e 2 0 ]
+"100
+[v _adcDatabuf adcDatabuf `VEui  1 e 2 0 ]
+"101
+[v _theVoltage theVoltage `VEui  1 e 2 0 ]
+"102
+[v _adc0Data adc0Data `VEui  1 e 2 0 ]
+"103
+[v _adc0Databuf adc0Databuf `VEui  1 e 2 0 ]
+"104
+[v _the0Voltage the0Voltage `VEui  1 e 2 0 ]
+"105
+[v _r_adbuf r_adbuf `VEui  1 e 2 0 ]
+"106
+[v _r_adbtbuf r_adbtbuf `VEui  1 e 2 0 ]
+"107
+[v _r_adbttimes r_adbttimes `VEuc  1 e 1 0 ]
+"108
+[v _r_50mstime r_50mstime `VEuc  1 e 1 0 ]
+"109
+[v _r_adtimes r_adtimes `VEuc  1 e 1 0 ]
+"112
+[v _r_mode r_mode `VEuc  1 e 1 0 ]
+"113
+[v _r_modeS r_modeS `VEuc  1 e 1 0 ]
+"114
+[v _r_test r_test `VEuc  1 e 1 0 ]
+"115
+[v _r_keyst r_keyst `VEuc  1 e 1 0 ]
+"116
+[v _r_keycvt r_keycvt `VEuc  1 e 1 0 ]
+"117
+[v _r_key r_key `VEuc  1 e 1 0 ]
+"118
+[v _r_ontime r_ontime `VEui  1 e 2 0 ]
+"119
+[v _r_1stime r_1stime `VEui  1 e 2 0 ]
+"120
+[v _r_1ms r_1ms `VEuc  1 e 1 0 ]
+"121
+[v _r_dc r_dc `VEui  1 e 2 0 ]
+"122
+[v _r_ntc r_ntc `VEui  1 e 2 0 ]
+"123
+[v _r_kfin r_kfin `VEui  1 e 2 0 ]
+"124
+[v _rl_kfin rl_kfin `VEui  1 e 2 0 ]
+"125
+[v _r_delay2s r_delay2s `VEui  1 e 2 0 ]
+"126
+[v _r_delay2sh r_delay2sh `VEui  1 e 2 0 ]
+"127
+[v _r_delay3m r_delay3m `VEui  1 e 2 0 ]
+"128
+[v _r_xdtime r_xdtime `VEui  1 e 2 0 ]
+"129
+[v _r_bufpwm r_bufpwm `VEuc  1 e 1 0 ]
+"130
+[v _r_vef r_vef `VEuc  1 e 1 0 ]
+"131
+[v _r_spwm r_spwm `VEuc  1 e 1 0 ]
+"132
+[v _r_buzzer r_buzzer `VEui  1 e 2 0 ]
+"133
+[v _PORTA_IN PORTA_IN `VEuc  1 e 1 0 ]
+"134
+[v _sleep_count sleep_count `VEuc  1 e 1 0 ]
+"135
+[v _r_onkey r_onkey `VEui  1 e 2 0 ]
+"136
+[v _bat_ch_in_and_out_max_data bat_ch_in_and_out_max_data `VEui  1 e 2 0 ]
+"139
+[v _led_count led_count `VEuc  1 e 1 0 ]
+"140
+[v _led_times led_times `VEuc  1 e 1 0 ]
+"141
+[v _led_on_count led_on_count `VEui  1 e 2 0 ]
+[v _ch_full_led_count ch_full_led_count `VEui  1 e 2 0 ]
+"143
+[v _r_buztime r_buztime `VEui  1 e 2 0 ]
+"145
+[v _lvd_count lvd_count `VEuc  1 e 1 0 ]
+"146
+[v _lvd_off_count lvd_off_count `VEuc  1 e 1 0 ]
+"148
+[v _int_count int_count `VEuc  1 e 1 0 ]
+"149
+[v _ch_in_count ch_in_count `VEuc  1 e 1 0 ]
+"152
+[v _number number `VEuc  1 e 1 0 ]
+"153
+[v _led_dis_buf led_dis_buf `VEuc  1 e 1 0 ]
+"154
+[v _this_dis_bat_data this_dis_bat_data `VEuc  1 e 1 0 ]
+"155
+[v _tig_dis_bat_data tig_dis_bat_data `VEuc  1 e 1 0 ]
+"159
+[v _led_ram led_ram `VE[3]uc  1 e 3 0 ]
+"160
+[v _led_com_count led_com_count `VEuc  1 e 1 0 ]
+"163
+[v _first_count first_count `VEuc  1 e 1 0 ]
+"164
+[v _r_ledlevel r_ledlevel `VEuc  1 e 1 0 ]
+"165
+[v _r_ledlevelbuf r_ledlevelbuf `VEuc  1 e 1 0 ]
+"166
+[v _r_ledleveldelay r_ledleveldelay `VEuc  1 e 1 0 ]
+"167
+[v _stop_count stop_count `VEuc  1 e 1 0 ]
+"170
+[v _EEReadData EEReadData `VEuc  1 e 1 0 ]
+"172
+[v _f_2t f_2t `VEb  1 e 0 0 ]
+"173
+[v _f_pwmno f_pwmno `VEb  1 e 0 0 ]
+"174
+[v _f_aderr f_aderr `VEb  1 e 0 0 ]
+"175
+[v _r_levelbuf r_levelbuf `VEui  1 e 2 0 ]
+"176
+[v _r_adval1 r_adval1 `VEuc  1 e 1 0 ]
+"177
+[v _r_leveldelay r_leveldelay `VEui  1 e 2 0 ]
+"178
+[v _r_pwmt r_pwmt `VEuc  1 e 1 0 ]
+"30 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\Cc_2033Anmo.C
+[v _main main `(i  1 e 2 0 ]
+{
+"64
+} 0
+"29 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\CC_KEY.C
+[v _key key `(v  1 e 1 0 ]
+{
+"42
+} 0
+"82
+[v _readmode readmode `(v  1 e 1 0 ]
+{
+"155
+} 0
+"44
+[v _readkey readkey `(v  1 e 1 0 ]
+{
+"80
+} 0
+"30 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\CC_APP.c
+[v _app app `(v  1 e 1 0 ]
+{
+"74
+} 0
+"366
+[v _app40 app40 `(v  1 e 1 0 ]
+{
+"402
+} 0
+"189
+[v _app11 app11 `(v  1 e 1 0 ]
+{
+"364
+} 0
+"75
+[v _appbt appbt `(v  1 e 1 0 ]
+{
+"125
+} 0
+"403
+[v _app30 app30 `(v  1 e 1 0 ]
+{
+"449
+} 0
+"126
+[v _app10 app10 `(v  1 e 1 0 ]
+{
+"188
+} 0
+"15 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\IDE3.0.9\data\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"15 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\IDE3.0.9\data\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"40 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\CC_FUN.C
+[v _GET_ADC_DATA GET_ADC_DATA `(ui  1 e 2 0 ]
+{
+[v GET_ADC_DATA@adcChannel adcChannel `uc  1 a 1 wreg ]
+[v GET_ADC_DATA@adcChannel adcChannel `uc  1 a 1 wreg ]
+"42
+[v GET_ADC_DATA@adcChannel adcChannel `uc  1 a 1 7 ]
+"55
+} 0
+"56
+[v _DelayUs DelayUs `(v  1 e 1 0 ]
+{
+"58
+[v DelayUs@a a `ui  1 a 2 2 ]
+"56
+[v DelayUs@Time Time `ui  1 p 2 0 ]
+"63
+} 0
+"778 C:\Users\ulrd0\OneDrive - Udyamlabs LLP\Fisher Wallace\OneDrive_2023-11-16\Source Code Shared to UL\Cc_2033Anmo (Firmware Source Code_GL)\CC_INT.C
+[v _Time4Initial Time4Initial `(v  1 e 1 0 ]
+{
+"844
+} 0
+"391
+[v _Time2Initial Time2Initial `(v  1 e 1 0 ]
+{
+"624
+} 0
+"767
+[v _TIMER0_INITIAL TIMER0_INITIAL `(v  1 e 1 0 ]
+{
+"770
+} 0
+"16
+[v _POWER_INITIAL POWER_INITIAL `(v  1 e 1 0 ]
+{
+"62
+} 0
+"626
+[v _ADC_INITIAL ADC_INITIAL `(v  1 e 1 0 ]
+{
+"758
+} 0
+"851
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"892
+} 0
