@@ -36,16 +36,16 @@ unint GET_ADC_DATA (unchar adcChannel);
 #define 		NTC_10MINS_DATA_EQU						6000
 #define			xdtime_DATA_EQU							1200
 
-#define 		level1_EQU										50//50
-#define 		level2_EQU										300//500//300//200
+#define 		level1_EQU										310//50
+#define 		level2_EQU										1200//500//300//200
 //#define 		level3_EQU										800//400
 //#define 		level4_EQU										1000//800
-#define 		level3_EQU										300//700//300//400
-#define 		level4_EQU										700//1200//700//800
+#define 		level3_EQU										1500//700//300//400
+#define 		level4_EQU										1500//1200//700//800
 //#define 		level2_EQU										200
 //#define 		level3_EQU										300
 //#define 		level4_EQU										500
-#define 		level5_EQU										1200
+#define 		level5_EQU										1500
 #define 		batlow_EQU										900//850
 //************************变量定义**************************
 

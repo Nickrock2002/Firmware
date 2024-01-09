@@ -7151,9 +7151,9 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;CC_APP.c: 152: r_test =6;
 "152
 [e = _r_test -> -> 6 `i `uc ]
-[; ;CC_APP.c: 154: if(r_adbuf < 50)
+[; ;CC_APP.c: 154: if(r_adbuf < 310)
 "154
-[e $ ! < _r_adbuf -> -> 50 `i `ui 366  ]
+[e $ ! < _r_adbuf -> -> 310 `i `ui 366  ]
 [; ;CC_APP.c: 155: {
 "155
 {
@@ -7166,8 +7166,8 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [e $U 367  ]
 "160
 [e :U 366 ]
-[; ;CC_APP.c: 160: else if(r_adbuf < 300)
-[e $ ! < _r_adbuf -> -> 300 `i `ui 368  ]
+[; ;CC_APP.c: 160: else if(r_adbuf < 1200)
+[e $ ! < _r_adbuf -> -> 1200 `i `ui 368  ]
 [; ;CC_APP.c: 161: {
 "161
 {
@@ -7180,8 +7180,8 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [e $U 369  ]
 "166
 [e :U 368 ]
-[; ;CC_APP.c: 166: else if(r_adbuf <( 300+r_vef*100))
-[e $ ! < _r_adbuf -> + -> 300 `i * -> _r_vef `i -> 100 `i `ui 370  ]
+[; ;CC_APP.c: 166: else if(r_adbuf <( 1500+r_vef*100))
+[e $ ! < _r_adbuf -> + -> 1500 `i * -> _r_vef `i -> 100 `i `ui 370  ]
 [; ;CC_APP.c: 167: {
 "167
 {
@@ -7194,8 +7194,8 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [e $U 371  ]
 "171
 [e :U 370 ]
-[; ;CC_APP.c: 171: else if(r_adbuf < (700+r_vef*100))
-[e $ ! < _r_adbuf -> + -> 700 `i * -> _r_vef `i -> 100 `i `ui 372  ]
+[; ;CC_APP.c: 171: else if(r_adbuf < (1500+r_vef*100))
+[e $ ! < _r_adbuf -> + -> 1500 `i * -> _r_vef `i -> 100 `i `ui 372  ]
 [; ;CC_APP.c: 172: {
 "172
 {
