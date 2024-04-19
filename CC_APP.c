@@ -44,10 +44,10 @@ void app(void)
             f_sleep =0;
  //           app10();
             PB5 =~PB5;
-			
-if(f_conduction==1){
-r_ontime --;
-}
+		if(f_conduction==1)         //check if electrodes are conducting
+		{ 
+			r_ontime --;    		//Decrement treatment timer if electrodes are conducting
+		}
 			if(r_ontime ==0)
 			{
 				f_on =0;
@@ -90,7 +90,7 @@ void appbt(void)
         else if(r_adbtbuf <950)
         {
             r_vef =1;
-        } 
+        }
         else if(r_adbtbuf <1000)
         {
             r_vef =2;
@@ -125,22 +125,22 @@ void appbt(void)
 }
 void app10(void)
 {
-
+	//adc0Data, adc0Databuf, adc0Data variables used for ADC0
     adc0Data = GET_ADC_DATA(0); 					//通道0 AD值
     the0Voltage = (unlong)adc0Data*2*1000/4096;	//电压放大1000倍	
 	r_test =5; 
     f_aderr =0;  
     if((adc0Databuf > adc0Data)&&((adc0Databuf -adc0Data) >100))
     {
-       f_aderr =1;
-        adcDatabuf =adcData;
+        f_aderr =1;
+        adc0Databuf =adc0Data;
     }
     if((adc0Data > adc0Databuf)&&((adc0Data -adc0Databuf) >100))
 	{
-       f_aderr =1;
+        f_aderr =1;
         adc0Databuf =adc0Data;
     }
-	//if(f_aderr ==0)
+	//if(f_aderr ==0)      //f_aderr==0 was never satisfied which did not allowed r_adbuf to update
    // {
 		r_adbuf = r_adbuf +the0Voltage;     
 		r_adtimes ++;
@@ -152,26 +152,25 @@ void app10(void)
         r_test =6;
 
         if(r_adbuf < level1_EQU)
- {
-    r_ledlevel =0;
-   // f_conduction=0;
-           
-       }       
+ 		{
+    		r_ledlevel =0;
+             
+        }       
         else if(r_adbuf < level2_EQU)
         {
-            r_ledlevel =1;
-//f_conduction=1;
-        }
-        
+            r_ledlevel =1;    
+            
+            
+        }        
+
         else if(r_adbuf <( level3_EQU+r_vef*100))
         {
             r_ledlevel =2;
-            //f_conduction=1;
         }
        else if(r_adbuf < (level4_EQU+r_vef*100))
         {
             r_ledlevel =3;
-            //f_conduction=1;
+            
         }        
 //        else if(r_adbuf < level5_EQU)
 //        {
@@ -179,8 +178,8 @@ void app10(void)
 //        }
         else 
         {
-            r_ledlevel =0;
-//f_conduction=0;
+            r_ledlevel = 0;   //When Thumb-wheel is not at maximum position disable yellow LED's and  stop internal Timer
+            
         }
 //        r_ledlevel =2;
 //        r_adbuf =0;
@@ -188,20 +187,15 @@ void app10(void)
 }
 void app11(void)
 {
-
      r_50mstime ++;
-     //app10(); 
      if(r_50mstime <51)
      {
-     //app10(); 
-
          LED1_out =0;
 		LED2_out =0;
 		LED3_out =0;
 		LED4_out =0;
         LED5_out =0; 
-       
-        app10(); 
+        app10();            // Check electrodes conduction all the time
          f_push = ~f_push;
          if(f_push ==1)
          {
@@ -211,7 +205,7 @@ void app11(void)
             DelayUs(200); 
             DelayUs(200);  
 //            DelayUs(200);   
-           // app10();
+           // app10();     //Default code was alterned // app10() - LED indicators were not updated when electrodes were not conducting
             
          }
          else
@@ -273,49 +267,38 @@ void app11(void)
          {
             LED5_out =1; 
 			if(r_ledlevelbuf==1)
-			{         
-              
+			{             
             LED1_out =1;
             LED2_out =1;
-            f_conduction=1;
-            //LED3_out=1;
-            //
-
+            f_conduction=1;               //Enable conduction flag
 			}
 			else if(r_ledlevelbuf ==2)
 			{        
             LED1_out =1;        
             LED2_out =1;
-             f_conduction=1;
-            //LED4_out =1;
+            f_conduction=1;               //Enable conduction flag
 			}
 			else if(r_ledlevelbuf ==3)
 			{  
             LED1_out =1;        
             LED2_out =1;  
-             f_conduction=1;        
-           //LED3_out =1;
-            //
+            f_conduction=1;                //Enable conduction flag 
 			}
 			else if(r_ledlevelbuf ==4)
 			{
             LED1_out =1;        
-            LED2_out =1;  
-             f_conduction=1;                   
-            //LED4_out =1;
+            LED2_out =1;     
+            f_conduction=1;                 //Enable conduction flag         
 			}
             else
             {
             LED1_out =0;        
             LED2_out =0;  
-             f_conduction=0;        
+            f_conduction=0;                  //Disable conduction flag        
           // LED3_out =0;            
           // LED4_out =0;
             }   
         }
-                 //  if(f_conduction=0){
-//            r_ontime ++;
-//            }
      }
      else 
      {   

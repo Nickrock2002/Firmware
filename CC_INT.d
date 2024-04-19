@@ -1,1 +1,0 @@
- CC_INT.d  CC_INT.obj:  CC_INT.C CCC_io.h CCC_data.h

@@ -40,7 +40,7 @@ void WDT_INITIAL (void)
 unint GET_ADC_DATA (unchar adcChannel) 
 { 
 	ADCON0 &= 0B00001111;        				   
-    ADCON0 |= adcChannel<<5; 				//重新加载通道值
+    ADCON0 |= adcChannel<<5; 				// Enable ADC0 data // When 4 only ADC1 data was captured //重新加载通道值
 	DelayUs(40);                        	//廷时等待电压稳定 Tst >10us
 	NOP();
     NOP();

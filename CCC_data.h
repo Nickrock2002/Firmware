@@ -36,6 +36,7 @@ unint GET_ADC_DATA (unchar adcChannel);
 #define 		NTC_10MINS_DATA_EQU						6000
 #define			xdtime_DATA_EQU							1200
 
+//Updated level_EQU values to enable conduction after thumbwheel rotation to max position
 #define 		level1_EQU										310//50
 #define 		level2_EQU										1200//500//300//200
 //#define 		level3_EQU										800//400
@@ -62,7 +63,7 @@ volatile bit    f_led3	=0;
 volatile bit    f_led4	=0;
 volatile bit    f_sleep	=0;
 volatile bit    f_ledoff	=0;
-volatile bit    f_conduction	=0;
+volatile bit    f_conduction	=0;  // Declaration of flag to determine electrodes are conducting signal or not
 volatile bit    f_ledlevel	=0;
 volatile bit    f_key1	=0;
 volatile bit    f_key2	=0;
@@ -96,12 +97,12 @@ volatile bit	f_one =0;
 volatile bit	f_pwm=0;
 volatile bit	f_hh=0;
 volatile bit	f_off=0;
-volatile uint	adcData=0;
-volatile uint	adcDatabuf=0;
-volatile uint	theVoltage=0;
-volatile uint	adc0Data=0;
-volatile uint	adc0Databuf=0;
-volatile uint	the0Voltage=0;
+volatile uint	adcData=0;        // Variable declaration for ADC1
+volatile uint	adcDatabuf=0;     // Variable declaration for ADC1
+volatile uint	theVoltage=0;     // Variable declaration for ADC1
+volatile uint	adc0Data=0;       // Variable declaration for ADC0 
+volatile uint	adc0Databuf=0;	  // Variable declaration for ADC0 
+volatile uint	the0Voltage=0;	  // Variable declaration for ADC0 
 volatile uint	r_adbuf=0;
 volatile uint	r_adbtbuf =0;
 volatile uchar	r_adbttimes	=0;
@@ -176,8 +177,5 @@ volatile uint	r_levelbuf=0;
 volatile uchar	r_adval1	=0;
 volatile uint	r_leveldelay =0;
 volatile uchar	r_pwmt	=0;
-
-//volatile uchar	conducting =0;
-
 
 //volatile uint	r_offdelay =0;

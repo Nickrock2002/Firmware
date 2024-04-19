@@ -1,0 +1,45 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:c2c0af79-b0b0-4112-813c-d7c69ad7f0aa",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-04-19T09:08:07.258Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "10.3.5",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@10.3.5",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.3.5",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "group": "",
+      "name": "Cc_2033Anmo (Firmware Source Code_GL) - Source code",
+      "version": "latest",
+      "type": "application",
+      "bom-ref": "pkg:gem/Cc_2033Anmo (Firmware Source Code_GL) - Source code@latest",
+      "purl": "pkg:gem/Cc_2033Anmo%20(Firmware%20Source%20Code_GL)%20-%20Source%20code@latest",
+      "components": []
+    }
+  },
+  "components": [],
+  "services": [],
+  "dependencies": []
+}
